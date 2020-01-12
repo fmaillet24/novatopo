@@ -1,3 +1,4 @@
 env
 novatopo/novatopo/__pycache__
 novatopo/app/__pycache__
+.vscode
