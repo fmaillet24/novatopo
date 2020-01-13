@@ -35,3 +35,57 @@ De plus, vous serez noté sur l'architecture de votre solution.
 
 Si vous avez la moindre question, n'hésitez pas à nous contacter par mail _(mehdi@novatopo.com)_ ou par téléphone. Good luck 😉
 
+## Utilisation
+
+### Cloner le repo
+
+```
+git clone https:https://github.com/fmaillet24/novatopo.git
+```
+
+### Creer une environnement virtuel
+
+```
+virtualenv -p python3 env
+```
+
+```
+source env/bin/activate
+```
+
+### Installer les dependances
+
+```
+pip install -r requirements.txt
+```
+
+### Creer la bdd
+
+```
+CREATE DATABASE novatopo;
+```
+
+### Initialisation de la bdd
+
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+
+### Installer le jeu de donnee de test
+
+```
+python loaddata data.json
+```
+
+### Lancer le serveur
+
+```
+python manage.py runserver
+```
+
+et se rendre sur 
+
+```
+http://127.0.0.1:8000/graphql
+```

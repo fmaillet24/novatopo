@@ -280,6 +280,7 @@ class AddBooking(graphene.Mutation):
                 participant=booking.participant,
                 date=booking.date,
                 total=booking.total,
+                paid=booking.paid,
                 is_staff=booking.is_staff,
                 activity=booking.activity.id)
         else:
